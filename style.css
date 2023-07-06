@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,400;0,600;0,700;0,800;1,100;1,700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #efefef;
+  font-family: 'Asap', sans-serif;
+}
+
+header {
+  background: #efefef;
+  padding: 20px;
+}
+
+header > h1 {
+  color: black;
+  text-align: center;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 700px;
+  margin: 0 auto;
+  border: 50px solid red;
+  border-radius: 50px;
+  box-shadow: black;
+}
+
+#grid {
+  width: 700px;
+  height: 600px;
+  background-color: white;
+  display: grid;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto;
+  gap: 15px;
+}
+
+button {
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+button.active {
+  background-color: grey;
+  color: black;
+}
+
+button,
+input[type='color'] {
+ transition: transform 0.1s ease-in-out;
+}
+
+button:hover,
+input[type='color']:hover {
+  transform: scale(1.05);
+}
+
+input[type='color']:active {
+  transition: transform 0.05s ease-in-out;
+  transform: scale(1);
+  background: none;
+}
+
+input[type='color'] {
+  width: 80px;
+  height: 80px;
+  border: none;
+}
+
+input[type='color']::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+input[type='color']::-webkit-color-swatch {
+  border: none;
+  border-radius: 50px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+ 
+.links {
+  margin: 50px 0;
+  text-align: center;
+}
+
+.link {
+  display: inline-block;
+  margin: 1px 5px;
+  padding: 10px;
+}
+
+footer {
+  background: #efefef;
+  padding: 30px;
+}
+
+footer > p {
+  text-align: center;
+  font-weight: bold;
+}
+
+footer a {
+  text-decoration: none;
+  color: inherit;
+}
